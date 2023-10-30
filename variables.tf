@@ -13,6 +13,12 @@ variable "alphaus_external_id" {
   description = "The external ID that Alphaus cloud will use to assume the role ARN. Do not change."
 }
 
+variable "alphaus_cf_name" {
+  type = string
+  default = "AlphausAccountAccess"
+  description = "What to call the Alphaus CloudFormation template"
+}
+
 variable "alphaus_enable_ec2_management" {
   type        = bool
   default     = false
