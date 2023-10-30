@@ -14,8 +14,8 @@ variable "alphaus_external_id" {
 }
 
 variable "alphaus_cf_name" {
-  type = string
-  default = "AlphausAccountAccess"
+  type        = string
+  default     = "AlphausAccountAccess"
   description = "What to call the Alphaus CloudFormation template"
 }
 
