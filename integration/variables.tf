@@ -3,12 +3,12 @@ variable "alphaus_principal" {
   description = "The Alphaus account that will have access to your account. Do not change."
 }
 
-variable "alphaus_external_id" {
+variable "external_id" {
   type        = string
   description = "The external ID that Alphaus cloud will use to assume the role ARN. Do not change."
 }
 
-variable "alphaus_cf_name" {
+variable "cf_name" {
   type        = string
   default     = "AlphausAccountAccess"
   description = "What to call the Alphaus CloudFormation template"
