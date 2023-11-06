@@ -2,6 +2,7 @@
 resource "aws_cloudformation_stack" "s3_access" {
   name         = var.cf_name
   template_url = "https://cover-cloudformation-templates.s3.ap-northeast-1.amazonaws.com/covercurexportdef-v1.yml"
+  capabilities = ["CAPABILITY_NAMED_IAM"]
   on_failure   = "ROLLBACK"
   parameters = {
     CurS3BucketName   = var.bucket_name
