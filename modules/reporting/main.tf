@@ -1,7 +1,7 @@
 # CloudFormation template to create the S3 bucket to which the reports should be written
 resource "aws_cloudformation_stack" "s3_access" {
   name         = var.cf_name
-  template_url = "https://cover-cloudformation-templates.s3.ap-northeast-1.amazonaws.com/covercurexportdef-v1.yml"
+  template_url = "https://cover-cloudformation-templates.s3.ap-northeast-1.amazonaws.com/covercurexportdef-v2.yml"
   capabilities = ["CAPABILITY_NAMED_IAM"]
   on_failure   = "ROLLBACK"
   parameters = {
@@ -11,7 +11,6 @@ resource "aws_cloudformation_stack" "s3_access" {
     CurS3Prefix       = var.report_prefix
     CurReportName     = var.report_name
     Principal         = var.alphaus_principal
-    AlphausAccessRole = join(",", var.management_roles)
   }
 }
 

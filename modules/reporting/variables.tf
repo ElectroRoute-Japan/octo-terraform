@@ -30,12 +30,6 @@ variable "report_name" {
   description = "The name to assign to the hourly CUR report"
 }
 
-variable "management_roles" {
-  type        = list(string)
-  default     = ["AlphausAcctAccessRole"]
-  description = "Names of existing roles for the managed policy."
-}
-
 variable "cf_name" {
   type        = string
   default     = "AlphausS3Access"

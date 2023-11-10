@@ -7,5 +7,4 @@ This module sets up the CUR report and S3 bucket to which said reports will be w
 - **bucket_option (required):** Whether to use an existing bucket (`USE_EXISTING`) or create a new one (`CREATE_NEW`). Only these values are accepted.
 - **report_name (optional):** The name of the CUR report to write to S3, defaults to `octo_reports_hourly`.
 - **report_prefix (optional):** The prefix in S3 to which CUR reports should be written, defaults to `hourly`.
-- **management_roles (optional):** The roles that should be provided access to the reports bucket. Multiple values are allowed, defaults to `AlphausAcctAccessRole`.
 - **cf_name (optional):** The name to assign to the CloudFormation template. This defaults to `AlphausS3Access`.
