@@ -1,2 +1,8 @@
-# Default code owners
-*       @ElectroRoute-Japan/Cranes @ElectroRoute-Japan/inquisitors
+# Ensure that changes to the terraform directory are reviewed by the infrastructure team
+*.tf @ElectroRoute-Japan/Cranes
+*.hcl @ElectroRoute-Japan/Cranes
+
+# Ensure that changes to workflows or the codeowners file are reviewed by the Admins
+.gitignore @ElectroRoute-Japan/Admins
+CODEOWNERS @ElectroRoute-Japan/Admins
+LICENSE @ElectroRoute-Japan/Admins
